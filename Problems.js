@@ -101,16 +101,31 @@ const number = (busStops) => busStops.reduce((rem, [on, off]) => rem + on - off,
 // Question
 // ----------------------------------------------------------------------------------
 
+// Find the last element of a list.
 
 // Answer
 // ----------------------------------------------------------------------------------
 // Mine
 // -----
+function last(list){
+if(list.length > 2) {
+  
+var arr = list.slice(-1);
+return arr[arr.length-1]
+}else {
+var arg = Array.prototype.slice.call(arguments);
+return arg[arg.length-1]
+}
+
+}
 
 
 // Best Practice
 // --------------
-
+function last(list){
+  var last = arguments[arguments.length - 1];
+  return last[last.length - 1] || last;
+}
 
 
 
