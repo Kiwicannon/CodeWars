@@ -133,12 +133,24 @@ function last(list){
 // Question
 // ----------------------------------------------------------------------------------
 
+// It is easy to join two strings together like this string1 + string2.
 
+// Another way to get the desired result would be with string1.concat(string2)
+
+// ES6 has introduced another way of joining strings. Your task is to find out what this is and write a function that will add two strings together, there must be a space between the two strings.
+
+// + , .concat() & .join() will not be allowed in this exercise. I have also removed some other methods that can be used to cheat!
+
+// If one of the arguments is a number your code must coerce it into being a string.
 // Answer
+
+
 // ----------------------------------------------------------------------------------
 // Mine
 // -----
-
+function joinStrings(string1, string2){
+   return `${string1} ${string2}`
+}
 
 // Best Practice
 // --------------
@@ -149,19 +161,26 @@ function last(list){
 // ----------------------------------------------------------------------------------
 // Question
 // ----------------------------------------------------------------------------------
+// You will be given an vector of string(s). You must sort it alphabetically (case-sensitive!!) and then return the first value.
 
+// The returned value must be a string, and have '***' between each of its letters.
 
 // Answer
 // ----------------------------------------------------------------------------------
 // Mine
-// -----
-
+// -------------------------
+function twoSort(s) {
+var sorted = s.sort()
+let split =  sorted[0].split('').join('***')
+return split
+}
 
 // Best Practice
 // --------------
 
-
-
+function twoSort(s) {
+  return s.sort()[0].split('').join('***');
+}
 
 // ----------------------------------------------------------------------------------
 // Question
