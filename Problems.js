@@ -319,16 +319,29 @@ function preFizz(n) {
 // Question
 // ----------------------------------------------------------------------------------
 
-
+// Complete the squareSum method so that it squares each number passed into it and then sums the results together.
 
 // Answer
 // ----------------------------------------------------------------------------------
 // Mine
 // -----
 
+function squareSum(numbers){
+var sum = 0
+for(i = 0; i < numbers.length; i++){
+sum += numbers[i] * numbers[i]
+}
+return sum
+}
 
 // Best Practice
 // --------------
+
+function squareSum(numbers){
+  return numbers.reduce(function(sum, n){
+    return (n*n) + sum;
+  }, 0)
+}
 
 // ----------------------------------------------------------------------------------
 // Question
