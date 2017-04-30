@@ -383,6 +383,9 @@ function fourSeasons(d){
 // Question
 // ----------------------------------------------------------------------------------
 
+// Find the number with the most digits.
+
+// If two numbers in the argument array have the same number of digits, return the first one in the array.
 
 
 // Answer
@@ -390,10 +393,30 @@ function fourSeasons(d){
 // Mine
 // -----
 
+function findLongest(array){
+var numbers = 0
+  for(var i = 0; i < array.length; i++){
+  if (array[i].toString().length > numbers.toString().length){
+  numbers =  array[i]
+  }
+}
+  return numbers
+}
 
 // Best Practice
 // --------------
+function findLongest(a) {
+  let m = Math.max(...a);
+  for (let i = 0; i < a.length; i++) if (m.toString().length == a[i].toString().length ) return a[i];
+}
 
+function findLongest(a) {
+  return a[a.map(n => ~~Math.log10(n)).indexOf(Math.max(...a.map(n => ~~Math.log10(n))))];
+}
+
+function findLongest(array){
+  return array.reduce((res, curr) => (String(res).length < String(curr).length) ? curr : res);
+}
 // ----------------------------------------------------------------------------------
 // Question
 // ----------------------------------------------------------------------------------
