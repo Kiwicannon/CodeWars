@@ -421,18 +421,37 @@ function findLongest(array){
 // Question
 // ----------------------------------------------------------------------------------
 
+// Return the number (count) of vowels in the given string.
 
+// We will consider a, e, i, o, and u as vowels for this Kata.
 
 // Answer
 // ----------------------------------------------------------------------------------
 // Mine
 // -----
-
+function getCount(str) {
+  var vowelsCount = 0;
+  let string = str.split('')
+  for(let i = 0; i < str.length; i++){
+  if('aeiou'.indexOf(string[i]) != -1 ){
+  vowelsCount++
+  }
+  }
+  
+  return vowelsCount;
+}
 
 // Best Practice
 // --------------
 
+function getCount(str) {
+  return (str.match(/[aeiou]/ig)||[]).length;
+}
 
+
+function getCount(str) {
+  return str.replace(/[^aeiou]/gi, '').length;
+}
 // ----------------------------------------------------------------------------------
 // Question
 // ----------------------------------------------------------------------------------
