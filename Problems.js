@@ -456,16 +456,29 @@ function getCount(str) {
 // Question
 // ----------------------------------------------------------------------------------
 
-
+// This time no story, no theory. The examples below show you how to write function accum:
 
 // Answer
 // ----------------------------------------------------------------------------------
 // Mine
 // -----
 
+function accum(s) {
+  let letters = s.toLowerCase().split('')
+  console.log(letters)
+  
+  for(let i = 0; i < letters.length; i++){
+ letters[i] = letters[i].toUpperCase() + letters[i].repeat(i)
+  }
+  return letters.join('-')
+}
 
 // Best Practice
 // --------------
+function accum(s) {
+  return s.split('').map((x,index) => x.toUpperCase()+Array(index+1).join(x.toLowerCase())).join('-');
+}
+
 
 // ----------------------------------------------------------------------------------
 // Question
