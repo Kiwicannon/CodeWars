@@ -729,17 +729,23 @@ function greet(name){
 // Question
 // ----------------------------------------------------------------------------------
 
-
+// Very simple, given a number, find its opposite.
 
 // Answer
 // ----------------------------------------------------------------------------------
 // Mine
 // -----
 
+function opposite(number) {
+    return number * (-1);
+}
 
 // Best Practice
 // --------------
 
+function opposite(number) {
+  return(-number);
+}
 
 // ----------------------------------------------------------------------------------
 // Question
