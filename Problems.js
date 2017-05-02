@@ -625,6 +625,11 @@ function descendingOrder(n){
 // Question
 // ----------------------------------------------------------------------------------
 
+// Welcome. In this kata, you are asked to square every digit of a number.
+
+// For example, if we run 9119 through the function, 811181 will come out.
+
+// Note: The function accepts an integer and returns an integer
 
 
 // Answer
@@ -632,9 +637,31 @@ function descendingOrder(n){
 // Mine
 // -----
 
+function squareDigits(num){
+let n = num.toString().split('')
+let square = ''
+  for(var i = 0; i < n.length; i++){
+  square += n[i]*n[i]
+  }
+  return (square/1)
+}
 
 // Best Practice
 // --------------
+
+function squareDigits(num){
+  return Number(('' + num).split('').map(function (val) { return val * val;}).join(''));
+  
+}
+
+function squareDigits(num){
+  var array = num.toString().split('').map( function(int) {
+    var i = parseInt(int);
+    return i * i;
+  });
+  
+  return parseInt(array.join(""));
+}
 
 // ----------------------------------------------------------------------------------
 // Question
