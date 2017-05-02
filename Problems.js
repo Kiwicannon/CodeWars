@@ -801,16 +801,28 @@ function countSheeps(arrayOfSheeps) {
 // Question
 // ----------------------------------------------------------------------------------
 
-
+// In this simple assignment you are given a number and have to make it negative. But maybe the number is already negative?
 
 // Answer
 // ----------------------------------------------------------------------------------
 // Mine
 // -----
 
+function makeNegative(num) {
+  if(num > 0){
+  return (-num)
+  }else{
+  return num
+  }
+}
+
 
 // Best Practice
 // --------------
+
+function makeNegative(num) {
+  return -Math.abs(num);
+}
 
 // ----------------------------------------------------------------------------------
 // Question
