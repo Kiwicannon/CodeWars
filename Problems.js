@@ -484,7 +484,71 @@ function accum(s) {
 // Question
 // ----------------------------------------------------------------------------------
 
+// Jaden Smith, the son of Will Smith, is the star of films such as The Karate Kid (2010) and After Earth (2013). Jaden is also known for some of his philosophy that he delivers via Twitter. When writing on Twitter, he is known for almost always capitalizing every word.
 
+// Your task is to convert strings to how they would be written by Jaden Smith. The strings are actual quotes from Jaden Smith, but they are not capitalized in the same way he originally typed them.
+
+
+
+// Answer
+// ----------------------------------------------------------------------------------
+// Mine
+// -----
+String.prototype.toJadenCase = function () {
+  return this.replace(/(^|\s)[a-z]/g, function(f){ return f.toUpperCase()});
+};
+
+// Best Practice
+// --------------
+String.prototype.toJadenCase = function () { 
+  return this.split(" ").map(function(word){
+    return word.charAt(0).toUpperCase() + word.slice(1);
+  }).join(" ");
+}
+
+String.prototype.toJadenCase = function () {
+  return this.replace(/(^|\s)[a-z]/g, function(x){ return x.toUpperCase(); });
+};
+
+// ----------------------------------------------------------------------------------
+// Question
+// ----------------------------------------------------------------------------------
+
+// Trolls are attacking your comment section!
+
+// A common way to deal with this situation is to remove all of the vowels from the trolls' comments, neutralizing the threat.
+
+// Your task is to write a function that takes a string and return a new string with all vowels removed.
+
+// For example, the string "This website is for losers LOL!" would become "Ths wbst s fr lsrs LL!".
+
+// Answer
+// ----------------------------------------------------------------------------------
+// Mine
+// -----
+function disemvowel(str) {
+  return str.replace(/[aeiou]/gi, '');
+}
+
+// Best Practice
+// --------------
+
+// ----------------------------------------------------------------------------------
+// Question
+// ----------------------------------------------------------------------------------
+
+// A square of squares
+
+// You like building blocks. You especially like building blocks that are squares. And what you even like more, is to arrange them into a square of square building blocks!
+
+// However, sometimes, you can't arrange them into a square. Instead, you end up with an ordinary rectangle! Those blasted things! If you just had a way to know, whether you're currently working in vain… Wait! That's it! You just have to check if your number of building blocks is a perfect square.
+
+// Task
+
+// Given an integral number, determine if it's a square number:
+
+// In mathematics, a square number or perfect square is an integer that is the square of an integer; in other words, it is the product of some integer with itself.
+// The tests will always use some integral number, so don't worry about that in dynamic typed languages.
 
 // Answer
 // ----------------------------------------------------------------------------------
@@ -492,6 +556,9 @@ function accum(s) {
 // -----
 
 
+function isSquare(n) {
+  return Math.sqrt(n) % 1 === 0;
+}
 // Best Practice
 // --------------
 
@@ -500,20 +567,7 @@ function accum(s) {
 // Question
 // ----------------------------------------------------------------------------------
 
-
-
-// Answer
-// ----------------------------------------------------------------------------------
-// Mine
-// -----
-
-
-// Best Practice
-// --------------
-
-// ----------------------------------------------------------------------------------
-// Question
-// ----------------------------------------------------------------------------------
+// You are going to be given a word. Your job is to return the middle character of the word. If the word's length is odd, return the middle character. If the word's length is even, return the middle 2 characters.
 
 
 
@@ -521,26 +575,19 @@ function accum(s) {
 // ----------------------------------------------------------------------------------
 // Mine
 // -----
-
-
-// Best Practice
-// --------------
-
-
-// ----------------------------------------------------------------------------------
-// Question
-// ----------------------------------------------------------------------------------
-
-
-
-// Answer
-// ----------------------------------------------------------------------------------
-// Mine
-// -----
-
+function getMiddle(s)
+{
+  return s.length % 2 ? s.substr(s.length / 2 , 1) : s.substr(s.length / 2 - 1, 2);
+}
 
 // Best Practice
 // --------------
+
+function getMiddle(s)
+{
+  return s.substr(Math.ceil(s.length / 2 - 1), s.length % 2 === 0 ? 2 : 1);
+}
+
 
 // ----------------------------------------------------------------------------------
 // Question
