@@ -921,17 +921,28 @@ function findNeedle(haystack) {
 // Question
 // ----------------------------------------------------------------------------------
 
+// Complete the solution so that the function will break up camel casing, using a space between words.
 
+// Example
+
+// solution('camelCasing') // => should return 'camel Casing'
 
 // Answer
 // ----------------------------------------------------------------------------------
 // Mine
 // -----
 
+function solution(string) {
+    return string.replace(/([a-z])([A-Z])/g,"$1 $2");
+}
 
 // Best Practice
 // --------------
 
+function solution(string) {
+  return(string.replace(/([A-Z])/g, ' $1'));
+
+}
 
 
 // ----------------------------------------------------------------------------------
