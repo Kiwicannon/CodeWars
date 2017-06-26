@@ -1290,35 +1290,64 @@ function summation(num) {
 // Question
 // ----------------------------------------------------------------------------------
 
+// Given a string, you have to return a string in which each character (case-sensitive) is repeated once.
 
+// doubleChar("String") ==> "SSttrriinngg"
+
+// doubleChar("Hello World") ==> "HHeelllloo  WWoorrlldd"
+
+// doubleChar("1234!_ ") ==> "11223344!!__  "
+// Good Luck!
 
 // Answer
 // ----------------------------------------------------------------------------------
 // Mine
 // -----
 
+function doubleChar(str) {
+var dC = ''
+  for(let i = 0; i < str.length; i++) {
+  dC += str[i]+str[i]
+  }
+  return dC
+}
+
 
 // Best Practice
 // --------------
 
+const doubleChar = (str) => str.split("").map(c => c + c).join("");
 
+
+function doubleChar(str) {
+  return str.replace(/(.)/g, "$1$1")
+}
 
 // ----------------------------------------------------------------------------------
 // Question
 // ----------------------------------------------------------------------------------
 
-
+// Code as fast as you can! You need to double the integer and return it.
 
 // Answer
 // ----------------------------------------------------------------------------------
 // Mine
 // -----
 
+function doubleInteger(i) {
+  // i will be an integer. Double it and return it.
+  return i * 2;
+}
 
 // Best Practice
 // --------------
 
+const doubleInteger = i => 2 * i;
 
+
+function doubleInteger(i) {
+  return i << 1;
+}
 
 // ----------------------------------------------------------------------------------
 // Question
