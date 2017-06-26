@@ -1353,35 +1353,70 @@ function doubleInteger(i) {
 // Question
 // ----------------------------------------------------------------------------------
 
+// Given 2 strings, a and b, return a string of the form short+long+short, with the shorter string on the outside and the longer string on the inside. The strings will not be the same length, but they may be empty (length0).
 
+// For example:
+
+// solution("1", "22") // returns "1221"
+// solution("22", "1") // returns "1221"
 
 // Answer
 // ----------------------------------------------------------------------------------
 // Mine
 // -----
 
+function solution(a, b){
+  return a+b+a
+}
+
 
 // Best Practice
 // --------------
 
+function solution(a, b) {
+  return a.length < b.length ? a + b + a : b + a + b
+}
+
+const solution = (a, b) =>  a < b ? a + b + a : b + a + b;
 
 
 // ----------------------------------------------------------------------------------
 // Question
 // ----------------------------------------------------------------------------------
 
+// Inspired by the development team at Vooza, write the function howManyLightsabersDoYouOwn that
 
+// accepts the name of a programmer, and
+// returns the number of lightsabers owned by that person.
+// The only person who owns lightsabers is Zach, by the way. He owns 18, which is an awesome number of lightsabers. Anyone else owns 0.
+
+// No starting help here -- you'll need to know how to write a function that accepts a parameter and returns a value based on that parameter.
+
+// howManyLightsabersDoYouOwn("anyone else") \\ should === 0
+// howManyLightsabersDoYouOwn("Zach") \\ should === 18
 
 // Answer
 // ----------------------------------------------------------------------------------
 // Mine
 // -----
 
+var howManyLightsabersDoYouOwn = function(name) { if(name === 'Zach'){
+return 18
+} else{
+return 0
+}
+}
 
 // Best Practice
 // --------------
 
+function howManyLightsabersDoYouOwn(name) {
+  return name === 'Zach' ? 18 : 0;
+}
 
+var howManyLightsabersDoYouOwn = function(name) {
+  return (name == "Zach") ? 18 : 0; 
+}
 
 // ----------------------------------------------------------------------------------
 // Question
