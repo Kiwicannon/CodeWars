@@ -1447,6 +1447,10 @@ let multiply = (a, b) => a * b;
 // Question
 // ----------------------------------------------------------------------------------
 
+// Given an input n, write a function always that returns a function which returns n. Ruby should return a lambda or a proc.
+
+// var three = always(3);
+// three(); // returns 3
 
 
 // Answer
@@ -1454,10 +1458,24 @@ let multiply = (a, b) => a * b;
 // Mine
 // -----
 
+function always (n) {
+ return function a (always) {return n;}
+}
 
 // Best Practice
 // --------------
 
+function always(n) {
+
+  return function () { return n };
+  
+}
+
+function always (n) {
+  return () => n;
+}
+
+let always = n => () => n;
 
 
 // ----------------------------------------------------------------------------------
