@@ -1555,17 +1555,25 @@ sum = function (numbers) {
 // Question
 // ----------------------------------------------------------------------------------
 
-
+// Now you have to write a function called square that takes an argument and returns the square of it.
 
 // Answer
 // ----------------------------------------------------------------------------------
 // Mine
 // -----
 
+square = n => {return n*n};
 
 // Best Practice
 // --------------
 
+var square = function(a){
+  return a*a;
+}
+
+square = function(num){
+  return num*num;
+}
 
 
 // ----------------------------------------------------------------------------------
