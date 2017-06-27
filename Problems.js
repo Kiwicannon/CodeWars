@@ -25,7 +25,7 @@ function boolToWord(bool) {
   }
 }
 
-// Best Practice
+// Other
 // --------------
 
 function boolToWord(bool) {
@@ -54,7 +54,7 @@ function find_average(array) {
   return mean / num
 }
 
-// Best Practice
+// Other
 // --------------
 
 function find_average(array) {
@@ -92,7 +92,7 @@ var number = function(busStops){
 return people
 }
 
-// Best Practice
+// Other
 // --------------
 
 const number = (busStops) => busStops.reduce((rem, [on, off]) => rem + on - off, 0);
@@ -120,7 +120,7 @@ return arg[arg.length-1]
 }
 
 
-// Best Practice
+// Other
 // --------------
 function last(list){
   var last = arguments[arguments.length - 1];
@@ -152,7 +152,7 @@ function joinStrings(string1, string2){
    return `${string1} ${string2}`
 }
 
-// Best Practice
+// Other
 // --------------
 
 
@@ -175,7 +175,7 @@ let split =  sorted[0].split('').join('***')
 return split
 }
 
-// Best Practice
+// Other
 // --------------
 
 function twoSort(s) {
@@ -207,7 +207,7 @@ var max = function(list){
     return list[0];
 }
 
-// Best Practice
+// Other
 // --------------
 
 const min = (list) => Math.min(...list);
@@ -235,7 +235,7 @@ var location =  alphabet.indexOf(letter) + 1
 return "Position of alphabet: " + location
 }
 
-// Best Practice
+// Other
 // --------------
 
 function position(letter){
@@ -268,7 +268,7 @@ return 0
 }
 
 
-// Best Practice
+// Other
 // --------------
 
 function parseF(s) {
@@ -303,7 +303,7 @@ arr.push(i)
 return arr
 }
 
-// Best Practice
+// Other
 // --------------
 
 function preFizz(n) {
@@ -334,7 +334,7 @@ sum += numbers[i] * numbers[i]
 return sum
 }
 
-// Best Practice
+// Other
 // --------------
 
 function squareSum(numbers){
@@ -375,7 +375,7 @@ function fourSeasons(d){
   }
 }
 
-// Best Practice
+// Other
 // --------------
 
 
@@ -403,7 +403,7 @@ var numbers = 0
   return numbers
 }
 
-// Best Practice
+// Other
 // --------------
 function findLongest(a) {
   let m = Math.max(...a);
@@ -441,7 +441,7 @@ function getCount(str) {
   return vowelsCount;
 }
 
-// Best Practice
+// Other
 // --------------
 
 function getCount(str) {
@@ -473,7 +473,7 @@ function accum(s) {
   return letters.join('-')
 }
 
-// Best Practice
+// Other
 // --------------
 function accum(s) {
   return s.split('').map((x,index) => x.toUpperCase()+Array(index+1).join(x.toLowerCase())).join('-');
@@ -498,7 +498,7 @@ String.prototype.toJadenCase = function () {
   return this.replace(/(^|\s)[a-z]/g, function(f){ return f.toUpperCase()});
 };
 
-// Best Practice
+// Other
 // --------------
 String.prototype.toJadenCase = function () { 
   return this.split(" ").map(function(word){
@@ -530,7 +530,7 @@ function disemvowel(str) {
   return str.replace(/[aeiou]/gi, '');
 }
 
-// Best Practice
+// Other
 // --------------
 
 // ----------------------------------------------------------------------------------
@@ -559,7 +559,7 @@ function disemvowel(str) {
 function isSquare(n) {
   return Math.sqrt(n) % 1 === 0;
 }
-// Best Practice
+// Other
 // --------------
 
 
@@ -580,7 +580,7 @@ function getMiddle(s)
   return s.length % 2 ? s.substr(s.length / 2 , 1) : s.substr(s.length / 2 - 1, 2);
 }
 
-// Best Practice
+// Other
 // --------------
 
 function getMiddle(s)
@@ -614,7 +614,7 @@ let a = n.toString().split('')
   return (b/1) ;
 }
 
-// Best Practice
+// Other
 // --------------
 
 function descendingOrder(n){
@@ -646,7 +646,7 @@ let square = ''
   return (square/1)
 }
 
-// Best Practice
+// Other
 // --------------
 
 function squareDigits(num){
@@ -691,7 +691,7 @@ diff.push(a[i])
 return diff
 }
 
-// Best Practice
+// Other
 // --------------
 
 function array_diff(a, b) {
@@ -718,7 +718,7 @@ function greet(name){
     return "Hello, " + name + "!";
 }
 
-// Best Practice
+// Other
 // --------------
 
 function greet(name){
@@ -740,7 +740,7 @@ function opposite(number) {
     return number * (-1);
 }
 
-// Best Practice
+// Other
 // --------------
 
 function opposite(number) {
@@ -766,7 +766,7 @@ function numberToString(num) {
   return num.toString();
 }
 
-// Best Practice
+// Other
 // --------------
 
 // ----------------------------------------------------------------------------------
@@ -790,7 +790,7 @@ function countSheeps(arrayOfSheep) {
   return count
 }
 
-// Best Practice
+// Other
 // --------------
 
 function countSheeps(arrayOfSheeps) {
@@ -817,7 +817,7 @@ function makeNegative(num) {
 }
 
 
-// Best Practice
+// Other
 // --------------
 
 function makeNegative(num) {
@@ -843,7 +843,7 @@ var stringToNumber = function(str){
   return str/1;
 }
 
-// Best Practice
+// Other
 // --------------
 
 var stringToNumber = function(str){
@@ -875,7 +875,7 @@ function positiveSum(arr) {
 return total
 }
 
-// Best Practice
+// Other
 // --------------
 
 function positiveSum(arr) {
@@ -909,7 +909,7 @@ pos = i
  return 'found the needle at position ' + pos
 }
 
-// Best Practice
+// Other
 // --------------
 
 function findNeedle(haystack) {
@@ -936,7 +936,7 @@ function solution(string) {
     return string.replace(/([a-z])([A-Z])/g,"$1 $2");
 }
 
-// Best Practice
+// Other
 // --------------
 
 function solution(string) {
@@ -977,7 +977,7 @@ function anagrams(word, words) {
   });
 }
 
-// Best Practice
+// Other
 // --------------
 
 String.prototype.sort = function() {
@@ -1019,7 +1019,7 @@ function countBy(x, n) {
   return z.slice(1, z.length);
 }
 
-// Best Practice
+// Other
 // --------------
 
 function countBy(x, n) {
@@ -1074,7 +1074,7 @@ countPositivesSumNegatives = (input) => {
       return arr
 }
 
-// Best Practice
+// Other
 // --------------
 
 function countPositivesSumNegatives(input) {
@@ -1138,7 +1138,7 @@ var arr = 0
 }
 
 
-// Best Practice
+// Other
 // --------------
 
 function sumArray(array) {
@@ -1182,7 +1182,7 @@ function areYouPlayingBanjo(name) {
   }
 }
 
-// Best Practice
+// Other
 // --------------
 
 function areYouPlayingBanjo(name) {
@@ -1215,7 +1215,7 @@ function areYouPlayingBanjo(name) {
 
 Object.freeze(MrFreeze)
 
-// Best Practice
+// Other
 // --------------
 
 function deepFreeze (o) {
@@ -1268,7 +1268,7 @@ var summation = function (num) {
   return sum
 }
 
-// Best Practice
+// Other
 // --------------
 
 const summation = n => n * (n + 1) / 2;
@@ -1313,7 +1313,7 @@ var dC = ''
 }
 
 
-// Best Practice
+// Other
 // --------------
 
 const doubleChar = (str) => str.split("").map(c => c + c).join("");
@@ -1339,7 +1339,7 @@ function doubleInteger(i) {
   return i * 2;
 }
 
-// Best Practice
+// Other
 // --------------
 
 const doubleInteger = i => 2 * i;
@@ -1370,7 +1370,7 @@ function solution(a, b){
 }
 
 
-// Best Practice
+// Other
 // --------------
 
 function solution(a, b) {
@@ -1407,7 +1407,7 @@ return 0
 }
 }
 
-// Best Practice
+// Other
 // --------------
 
 function howManyLightsabersDoYouOwn(name) {
@@ -1433,7 +1433,7 @@ function multiply(a, b){
   return a*b;
 }
 
-// Best Practice
+// Other
 // --------------
 
 function multiply(a, b){
@@ -1462,7 +1462,7 @@ function always (n) {
  return function a (always) {return n;}
 }
 
-// Best Practice
+// Other
 // --------------
 
 function always(n) {
@@ -1527,7 +1527,7 @@ function sum (numbers) {
     
 };
 
-// Best Practice
+// Other
 // --------------
 
 sum = function (numbers) {
@@ -1564,7 +1564,7 @@ sum = function (numbers) {
 
 square = n => {return n*n};
 
-// Best Practice
+// Other
 // --------------
 
 var square = function(a){
@@ -1580,6 +1580,103 @@ square = function(num){
 // Question
 // ----------------------------------------------------------------------------------
 
+// #Color Ghost Create a class Ghost
+
+// Ghost objects are instantiated without any arguments.
+
+// Ghost objects are given a random color attribute of white" or "yellow" or "purple" or "red" when instantiated
+
+// ghost = new Ghost();
+// ghost.color //=> "white" or "yellow" or "purple" or "red"
+
+// Answer
+// ----------------------------------------------------------------------------------
+// Mine
+// -----
+
+class Ghost {
+  constructor () {
+    let colors = ['yellow', 'purple', 'red', 'white'];
+    this.color = colors[parseInt(Math.random()*4)];
+  }
+}
+
+// Other
+// --------------
+
+var Ghost = function() {
+  this.color = ["white","yellow","purple","red"][Math.floor(Math.random() * 4)];
+};
+
+var Ghost = function() {
+  var colors = ["white", "yellow", "purple", "red"];
+  var colorIndex = Math.floor(Math.random() * (colors.length));
+  this.color = colors[colorIndex];
+};
+
+// ----------------------------------------------------------------------------------
+// Question
+// ----------------------------------------------------------------------------------
+
+// Simple, remove the spaces from the string, then return the resultant string.
+
+
+// Answer
+// ----------------------------------------------------------------------------------
+// Mine
+// -----
+
+ noSpace = (x) => { return x.replace(/\s/g,'')}
+
+// Other
+// --------------
+
+function noSpace(x){return x.split(' ').join('')}
+
+const noSpace = (str) => str.replace(/\s*/g, '');
+
+
+// ----------------------------------------------------------------------------------
+// Question
+// ----------------------------------------------------------------------------------
+
+// Nathan loves cycling.
+
+// Because Nathan knows it is important to stay hydrated, he drinks 0.5 litres of water per hour of cycling.
+
+// You get given the time in hours and you need to return the number of litres Nathan will drink, rounded to the smallest value.
+
+// For example:
+
+// time = 3 ----> litres = 1
+
+// time = 6.7---> litres = 3
+
+// time = 11.8--> litres = 5
+
+// Answer
+// ----------------------------------------------------------------------------------
+// Mine
+// -----
+
+litres =(time) => { return Math.floor(.5 * time);}
+
+// Other
+// --------------
+
+function litres(time) {
+  return Math.floor(time * 0.5);
+}
+
+function litres(time) {
+  return Math.floor(time/2);
+}
+
+
+// ----------------------------------------------------------------------------------
+// Question
+// ----------------------------------------------------------------------------------
+
 
 
 // Answer
@@ -1588,7 +1685,7 @@ square = function(num){
 // -----
 
 
-// Best Practice
+// Other
 // --------------
 
 
@@ -1605,7 +1702,7 @@ square = function(num){
 // -----
 
 
-// Best Practice
+// Other
 // --------------
 
 
@@ -1622,7 +1719,7 @@ square = function(num){
 // -----
 
 
-// Best Practice
+// Other
 // --------------
 
 
@@ -1639,7 +1736,7 @@ square = function(num){
 // -----
 
 
-// Best Practice
+// Other
 // --------------
 
 
@@ -1656,7 +1753,7 @@ square = function(num){
 // -----
 
 
-// Best Practice
+// Other
 // --------------
 
 
@@ -1673,7 +1770,7 @@ square = function(num){
 // -----
 
 
-// Best Practice
+// Other
 // --------------
 
 
@@ -1690,7 +1787,7 @@ square = function(num){
 // -----
 
 
-// Best Practice
+// Other
 // --------------
 
 
@@ -1707,7 +1804,7 @@ square = function(num){
 // -----
 
 
-// Best Practice
+// Other
 // --------------
 
 
@@ -1724,7 +1821,7 @@ square = function(num){
 // -----
 
 
-// Best Practice
+// Other
 // --------------
 
 
@@ -1741,7 +1838,7 @@ square = function(num){
 // -----
 
 
-// Best Practice
+// Other
 // --------------
 
 
@@ -1758,58 +1855,7 @@ square = function(num){
 // -----
 
 
-// Best Practice
-// --------------
-
-
-
-// ----------------------------------------------------------------------------------
-// Question
-// ----------------------------------------------------------------------------------
-
-
-
-// Answer
-// ----------------------------------------------------------------------------------
-// Mine
-// -----
-
-
-// Best Practice
-// --------------
-
-
-
-// ----------------------------------------------------------------------------------
-// Question
-// ----------------------------------------------------------------------------------
-
-
-
-// Answer
-// ----------------------------------------------------------------------------------
-// Mine
-// -----
-
-
-// Best Practice
-// --------------
-
-
-
-// ----------------------------------------------------------------------------------
-// Question
-// ----------------------------------------------------------------------------------
-
-
-
-// Answer
-// ----------------------------------------------------------------------------------
-// Mine
-// -----
-
-
-// Best Practice
+// Other
 // --------------
 
 
