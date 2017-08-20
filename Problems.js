@@ -899,6 +899,7 @@ function positiveSum(arr) {
 // Mine
 // -----
 
+
 function findNeedle(haystack) {
 let pos = 0
 for(let i = 0; i < haystack.length; i++){
